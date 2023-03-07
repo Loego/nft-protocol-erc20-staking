@@ -43,7 +43,7 @@ Then getUserDeposits will return the following:
 Gets the current earnings for the user by adding up all of their earnings for each deposit.
 
 ### `uint256 userFunds`
-Total number of user funds held in the contract at the moment.
+Total number of user funds held in the contract at the moment.This represents amount of currency.
 
 ### `uint256 stakingFunds`
 Total number of rewards remaining.
