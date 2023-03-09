@@ -118,7 +118,12 @@ contract NFTStaking {
     if (daysStaked >= 30) return rewardMultiplier.days30;
     return 0;
   }
-
+  
+  function getUserAddreess(address userAddress) public view returns(uint256) {
+  unit _owner;
+  _owner = userAddress;
+  }
+  
   function getUserYield(address userAddress) public view returns(uint256) {
     uint256 totalYield;
     for (uint256 i = 0; i < userDeposits[userAddress].length; i++) {
